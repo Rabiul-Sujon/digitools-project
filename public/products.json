@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Design Templates",
+    "description": "High-quality UI kits and Figma systems.",
+    "price": 29.00,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "badge-secondary",
+    "features": ["100+ templates", "Figma Source", "Free Updates"],
+    "icon": "design-t.png"
+  },
+  {
+    "id": 2,
+    "name": "Operation Suite",
+    "description": "Management tools for digital teams.",
+    "price": 45.00,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-primary",
+    "features": ["Team Sync", "Task Tracker", "Unlimited Projects"],
+    "icon": "operatio.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Builder",
+    "description": "Showcase your work with stunning layouts.",
+    "price": 19.00,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "badge-accent",
+    "features": ["SEO Ready", "Custom Domain", "Export to HTML"],
+    "icon": "portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Shopping Cart Pro",
+    "description": "Complete e-commerce solution.",
+    "price": 35.00,
+    "period": "one-time",
+    "tag": "Sale",
+    "tagType": "badge-ghost",
+    "features": ["Payment Gateway", "Inventory Mgmt", "Tax Calculator"],
+    "icon": "shopping.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Kit",
+    "description": "Templates for social media growth.",
+    "price": 25.00,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "badge-error",
+    "features": ["Auto Post", "Analytics", "AI Captions"],
+    "icon": "social-m.png"
+  },
+  {
+    "id": 6,
+    "name": "Writing Assistant",
+    "description": "AI-powered writing tools.",
+    "price": 15.00,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-info",
+    "features": ["Grammar Check", "Plagiarism tool", "50 Languages"],
+    "icon": "writing_2.png"
+  }
+]

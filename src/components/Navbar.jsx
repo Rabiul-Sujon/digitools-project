@@ -30,7 +30,7 @@ const Navbar = () => {
         
         {/* Login & Get Started */}
         <button className="btn btn-ghost btn-sm hidden md:inline-flex">Login</button>
-        <button className="btn btn-primary btn-sm md:btn-md rounded-lg">Get Started</button>
+        <button className="btn btn-primary btn-sm md:btn-md rounded-full">Get Started</button>
       </div>
     </div>
   );
