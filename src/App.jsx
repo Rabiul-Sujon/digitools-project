@@ -1,25 +1,61 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Banner from './components/Banner'
-import Stats from './components/Stats'
-
+import { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Stats from "./components/Stats";
+import ProductHeader from "./components/ProductHeader";
+import ProductList from "./components/ProductList";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
+  const [view, setView] = useState('products'); // Toggle between 'products' and 'cart'
+
+  // Fetch JSON Data
+  useEffect(() => {
+    fetch("./products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  // Add to Cart Function
+  const handleAddToCart = (product) => {
+    const isExist = cart.find((item) => item.id === product.id);
+    if (!isExist) {
+      setCart([...cart, product]);
+      toast.success(`${product.name} added to cart!`);
+    } else {
+      toast.warn("Product already in cart!");
+    }
+  };
 
   return (
-    <>
     <div className="bg-white min-h-screen">
-      <Navbar />
-      <Banner/>
-      <Stats/>
+      <ToastContainer position="top-center" autoClose={2000} />
       
- 
+      {/* Pass cart.length to Navbar to update the count */}
+      <Navbar cartCount={cart.length} />
+      
+      <Banner />
+      <Stats />
+
+      {/* Pass view and setView to the header to make buttons work */}
+      <ProductHeader view={view} setView={setView} cartCount={cart.length} />
+
+      {/* Conditional Rendering: Show Products or Cart */}
+      {view === 'products' ? (
+        <ProductList products={products} handleAddToCart={handleAddToCart} 
+        cart={cart}/>
+         ) : (
+        <div className="max-w-7xl mx-auto px-10 pb-20 text-center">
+          {}
+          <h2 className="text-2xl font-bold">Your Cart ({cart.length})</h2>
+          {cart.length === 0 && <p className="text-slate-500 mt-4">Your cart is currently empty.</p>}
+        </div>
+      )}
     </div>
-     
-    </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -10,7 +10,7 @@ const Stats = () => {
         </div>
 
         {/* Vertical Divider 1 */}
-        <div className="hidden md:block w-[1px] h-16 bg-purple-400 opacity-50"></div>
+        <div className="hidden md:block w-[2px] h-16 bg-purple-400 opacity-50"></div>
 
         {/* Premium Tools */}
         <div className="text-center flex-1 my-8 md:my-0">
@@ -19,7 +19,7 @@ const Stats = () => {
         </div>
 
         {/* Vertical Divider 2 */}
-        <div className="hidden md:block w-[1px] h-16 bg-purple-400 opacity-50"></div>
+        <div className="hidden md:block w-[2px] h-16 bg-purple-400 opacity-50"></div>
 
         {/* Rating */}
         <div className="text-center flex-1">

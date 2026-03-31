@@ -8,7 +8,7 @@
     "tag": "Popular",
     "tagType": "badge-secondary",
     "features": ["100+ templates", "Figma Source", "Free Updates"],
-    "icon": "design-t.png"
+    "icon": "design-tool.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "New",
     "tagType": "badge-primary",
     "features": ["Team Sync", "Task Tracker", "Unlimited Projects"],
-    "icon": "operatio.png"
+    "icon": "operation.png"
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
     "tag": "Sale",
     "tagType": "badge-ghost",
     "features": ["Payment Gateway", "Inventory Mgmt", "Tax Calculator"],
-    "icon": "shopping.png"
+    "icon": "shopping-cart.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "Hot",
     "tagType": "badge-error",
     "features": ["Auto Post", "Analytics", "AI Captions"],
-    "icon": "social-m.png"
+    "icon": "social-media.png"
   },
   {
     "id": 6,
@@ -63,6 +63,6 @@
     "tag": "New",
     "tagType": "badge-info",
     "features": ["Grammar Check", "Plagiarism tool", "50 Languages"],
-    "icon": "writing_2.png"
+    "icon": "writing_2327400 1.png"
   }
 ]
