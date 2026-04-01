@@ -1,16 +1,21 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Project Name :   DigiTools 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+>> DigiTools is a high-performance web application designed for a modern digital shopping experience. Built with by Figma demo, this project has pixel-perfect alignment, custom-styled SVGs, and a highly responsive layout. It features a dynamic product dashboard where users can interact with real-time cart, logic and a premium pricing section.
 
-## React Compiler
+# Technology :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   * React JS
+   * Tawilwind CSS
+   * Daisyui
+   * Lucide React
+   * vite
 
-## Expanding the ESLint configuration
+# Features :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.>> Pixel-Perfect :Every component, including the 5-column responsive footer and the product grid, was built to match specific design measurements and color codes (like `#7C3AED`) to ensure a high-end professional look.
+
+2.>> Smart Cart Interaction Logic: The application includes an intelligent "Buy Now" system. When a product is added, the button dynamically updates to "Already in Cart," disables itself, and changes the cursor to `cursor-not-allowed` to prevent duplicate entries.
+
+3.>> Optimized Interactive UI: Enhanced user affordance with `cursor-pointer` on all clickable elements. i used lightweight, custom-adapted SVGs from "Lucide" to ensure fast loading times and a modern aesthetic across all screen sizes.
