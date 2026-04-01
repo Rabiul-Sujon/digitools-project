@@ -42,7 +42,7 @@ const ProductCart = ({ cart, handleRemove, handleCheckout }) => {
                 {/* REMOVE BUTTON  */}
                 <button 
                   onClick={() => handleRemove(item.id)}
-                  className="text-[#F43F5E] hover:text-[#E11D48] text-sm font-semibold transition-colors px-2"
+                  className="text-[#F43F5E] hover:text-[#E11D48] text-sm font-semibold transition-colors cursor-pointer px-2"
                 >
                   Remove
                 </button>

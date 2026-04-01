@@ -12,7 +12,6 @@ import PricingSection from "./components/PricingSection";
 import Footer from "./components/Footer";
 
 
-
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);

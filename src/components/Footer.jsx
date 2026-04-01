@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 // SVG Resource > https://v0.lucide.dev
 const InstagramIcon = () => (

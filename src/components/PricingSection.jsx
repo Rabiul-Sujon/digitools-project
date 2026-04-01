@@ -1,5 +1,4 @@
 
-
 //  Check icon from Lucide React 
 import { Check } from 'lucide-react'; 
 
@@ -83,7 +82,7 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <button className={`w-full py-4 rounded-2xl font-bold transition-all ${
+              <button className={`w-full py-4 rounded-2xl font-bold transition-all cursor-pointer duration-300 ${
                 plan.isPopular 
                   ? "bg-white text-[#7C3AED] hover:bg-gray-100" 
                   : "bg-[#7C3AED] text-white hover:bg-[#6D28D9]"

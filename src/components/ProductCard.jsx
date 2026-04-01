@@ -57,7 +57,7 @@ const ProductCard = ({ product,handleAddToCart, cart }) => {
         className={`w-full font-bold py-4 rounded-2xl transition-all duration-300 ${
           isAlreadyInCart 
             ? 'bg-slate-100 text-slate-400 cursor-not-allowed' 
-            : 'bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg shadow-purple-100'
+            : 'bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg shadow-purple-100 cursor-pointer'
         }`}
       >
         {isAlreadyInCart ? 'Already in Cart' : 'Buy Now'}

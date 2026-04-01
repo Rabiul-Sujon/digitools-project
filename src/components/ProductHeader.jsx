@@ -20,7 +20,7 @@ const ProductHeader = ({ view, setView, cartCount }) => {
         {/* Products Button */}
         <button 
           onClick={() => setView('products')}
-          className={`px-10 py-3 rounded-full font-bold transition-all duration-300 ${
+          className={`px-10 py-3 rounded-full font-bold transition-all cursor-pointer duration-300 ${
             view === 'products' 
             ? 'bg-[#7C3AED] text-white shadow-lg shadow-purple-200' 
             : 'text-slate-600 hover:bg-slate-50'
@@ -32,7 +32,7 @@ const ProductHeader = ({ view, setView, cartCount }) => {
         {/* Cart Button */}
         <button 
           onClick={() => setView('cart')}
-          className={`px-10 py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 ${
+          className={`px-10 py-3 rounded-full font-bold transition-all cursor-pointer duration-300 flex items-center gap-2 ${
             view === 'cart' 
             ? 'bg-[#7C3AED] text-white shadow-lg shadow-purple-200' 
             : 'text-slate-600 hover:bg-slate-50'

@@ -1,3 +1,4 @@
+
 const Navbar = ({ cartCount }) => {
   return (
     <div className="navbar bg-base-100 shadow-sm px-4 md:px-10 fixed top-0 z-50">
