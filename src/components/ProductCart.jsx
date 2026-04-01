@@ -2,6 +2,7 @@ import React from 'react'
 
 const getImageUrl = (name) => {
   return new URL(`../assets/products/${name}`, import.meta.url).href;
+  // Solve the image path using the current file location
 };
 
 const ProductCart = ({ cart, handleRemove, handleCheckout }) => {

@@ -2,6 +2,7 @@
 const ProductCard = ({ product,handleAddToCart, cart }) => {
     const getImageUrl = (name) => {
     return new URL(`../assets/products/${name}`, import.meta.url).href;
+    // Solve the image path using the current file location
   };
   const isAlreadyInCart = cart.find((item) => item.id === product.id);
   return (
