@@ -6,6 +6,8 @@ import Banner from "./components/Banner";
 import Stats from "./components/Stats";
 import ProductHeader from "./components/ProductHeader";
 import ProductList from "./components/ProductList";
+import ProductCart from "./components/ProductCart";
+
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -28,7 +30,22 @@ function App() {
     } else {
       toast.warn("Product already in cart!");
     }
-  };
+   };
+
+  // Remove from cart
+  const handleRemove = (id) => {
+    const remainingItems = cart.filter(item => item.id !== id);
+    setCart(remainingItems);
+    toast.error("Item removed from cart!");
+   };
+
+  //  Checkout Removal
+   const handleCheckout = () => {
+      setCart([]); 
+      toast.success("Checkout successful! Thank you for your purchase.");
+      // alert("Checkout successful!"); 
+      // setView('products'); // Optional: This takes you back to the home page
+     };
 
   return (
     <div className="bg-white min-h-screen">
@@ -49,12 +66,13 @@ function App() {
         cart={cart}/>
          ) : (
         <div className="max-w-7xl mx-auto px-10 pb-20 text-center">
-          {}
-          <h2 className="text-2xl font-bold">Your Cart ({cart.length})</h2>
-          {cart.length === 0 && <p className="text-slate-500 mt-4">Your cart is currently empty.</p>}
+       <ProductCart cart={cart} 
+        handleRemove={handleRemove}
+        handleCheckout={handleCheckout}/>
         </div>
       )}
     </div>
+    
   );
 }
 
