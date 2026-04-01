@@ -8,6 +8,8 @@ import ProductHeader from "./components/ProductHeader";
 import ProductList from "./components/ProductList";
 import ProductCart from "./components/ProductCart";
 import StepsSection from "./components/StepsSection";
+import PricingSection from "./components/PricingSection";
+
 
 
 function App() {
@@ -72,8 +74,10 @@ function App() {
         handleCheckout={handleCheckout}/>
         </div>
       )}
-      
+
       <StepsSection/>
+      <PricingSection/>
+    
     </div>
     
   );
