@@ -9,6 +9,7 @@ import ProductList from "./components/ProductList";
 import ProductCart from "./components/ProductCart";
 import StepsSection from "./components/StepsSection";
 import PricingSection from "./components/PricingSection";
+import Footer from "./components/Footer";
 
 
 
@@ -77,6 +78,7 @@ function App() {
 
       <StepsSection/>
       <PricingSection/>
+      <Footer/>
     
     </div>
     
